@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background: url("../img/drumkit.jpg") bottom center;
   background-size: cover;
 }
 body,html {
@@ -11,20 +11,21 @@ body,html {
 
 .keys {
   display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 600px;
+  margin-top: 100px;
+  background: rgba(200,200,200,0.2);
 }
 
 .key {
-  border: .4rem solid black;
-  border-radius: .5rem;
-  margin: 1rem;
+  flex: 1 0 20%;
+  background-color: blue;
+  border: 10px solid black;
+  border-radius: 10px;
+  margin: 25px;
   font-size: 1.5rem;
-  padding: 1rem .5rem;
+  padding: 10px 15px;
   transition: all .07s ease;
-  width: 10rem;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
