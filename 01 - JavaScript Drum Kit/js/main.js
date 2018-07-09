@@ -25,8 +25,10 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 document.addEventListener("keydown", playSound);
 
-document.addEventListener('keyup', function (e) {
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+document.addEventListener('keyup', function (ev) {
+    const key = document.querySelector(`.key[data-key="${ev.keyCode}"]`)
     if(key && key.classList.contains('playing')) key.classList.remove('playing');
   });
+
+
 
